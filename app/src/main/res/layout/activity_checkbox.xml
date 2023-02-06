@@ -1,9 +1,393 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainScroll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".checkbox">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/stealBlue"
+        android:divider="@color/black"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:id="@+id/question1Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@color/backgroudBrown"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/enunciado1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/marvinImage1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:onClick="sendMessage"
+                    app:srcCompat="@drawable/marvin_extra_small" />
+
+                <TextView
+                    android:id="@+id/question1Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@+id/marvinImage1"
+                    android:text="¿Cuales de estos programas son solo de Linux?"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+            <CheckBox
+                android:id="@+id/question1Awnser1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="GIMP" />
+
+            <CheckBox
+                android:id="@+id/question1Awnser2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Wine" />
+
+            <CheckBox
+                android:id="@+id/question1Awnser3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="GParted" />
+
+            <CheckBox
+                android:id="@+id/question1Awnser4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="iTerm" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question2Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@color/backgroudBrown"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/enunciado2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/marvinImage2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/marvin_extra_small" />
+
+                <TextView
+                    android:id="@+id/question2Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@+id/marvinImage2"
+                    android:text="¿Cual es el navegador por defecto en dispositivos Apple?"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp">
+
+                <RadioButton
+                    android:id="@+id/question2Awnser1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Opera" />
+
+                <RadioButton
+                    android:id="@+id/question2Awnser2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Safari" />
+
+                <RadioButton
+                    android:id="@+id/question2Awnser3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chrome" />
+
+                <RadioButton
+                    android:id="@+id/question2Awnser4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Firefox" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question3Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@color/backgroudBrown"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/enunciado3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/marvinImage3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/marvin_extra_small" />
+
+                <TextView
+                    android:id="@+id/question3Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@+id/marvinImage3"
+                    android:text="¿Que versión de Windows nunca ha existido?"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp">
+
+                <RadioButton
+                    android:id="@+id/question3Awnser1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Windows Me" />
+
+                <RadioButton
+                    android:id="@+id/question3Awnser2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Windows 8" />
+
+                <RadioButton
+                    android:id="@+id/question3Awnser3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Windows 95" />
+
+                <RadioButton
+                    android:id="@+id/question3Awnser4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Windows 9" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question4Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@color/backgroudBrown"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/enunciado4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/marvinImage4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/marvin_extra_small" />
+
+                <TextView
+                    android:id="@+id/question4Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@+id/marvinImage4"
+                    android:text="¿Cual es el nombre de la mascota de Linux?"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroup3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp">
+
+                <RadioButton
+                    android:id="@+id/question4Awnser1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Linux" />
+
+                <RadioButton
+                    android:id="@+id/question4Awnser2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tux" />
+
+                <RadioButton
+                    android:id="@+id/question4Awnser3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Flipy" />
+
+                <RadioButton
+                    android:id="@+id/question4Awnser4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gnu" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question5Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@color/backgroudBrown"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/enunciado5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/marvinImage5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/marvin_extra_small" />
+
+                <TextView
+                    android:id="@+id/question5Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@+id/marvinImage5"
+                    android:text="Introduce en que año Tim Berners-Lee escribe la primera página web."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/question5Awnser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Tu respuesta"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question6Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@color/backgroudBrown"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/enunciado6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/marvinImage6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/marvin_extra_small" />
+
+                <TextView
+                    android:id="@+id/question6Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@+id/marvinImage6"
+                    android:text="¿Que dos lenguajes son los más indicados para desarrollo de videojuegos?"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+            <CheckBox
+                android:id="@+id/question6Awnser1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Java" />
+
+            <CheckBox
+                android:id="@+id/question6Awnser2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Swift" />
+
+            <CheckBox
+                android:id="@+id/question6Awnser3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Cobol" />
+
+            <CheckBox
+                android:id="@+id/question6Awnser4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="C++" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonStart"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight=".1"
+            android:backgroundTint="@color/black"
+            android:onClick="getResults"
+            android:text="Ver resultados" />
+    </LinearLayout>
+</ScrollView>

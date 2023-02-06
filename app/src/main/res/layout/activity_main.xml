@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FAEBD7"
+    android:background="@color/backgroudBrown"
     android:id="@+id/introContainer"
     android:orientation="vertical"
     tools:context=".MainActivity">
@@ -42,7 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/mainIntro"
-            android:text="Aceptas este reto?"
+            android:text="Aceptas el reto?"
 
             android:textAlignment="center"
             android:textColor="@color/black"
@@ -63,5 +63,6 @@
         android:layout_margin="10dp"
         android:layout_weight=".1"
         android:backgroundTint="@color/black"
-        android:text="Comenzar!!" />
+        android:text="Comenzar!!"
+        android:onClick="starQuiz"/>
 </LinearLayout>

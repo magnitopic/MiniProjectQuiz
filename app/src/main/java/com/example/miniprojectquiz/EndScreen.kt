@@ -1,0 +1,11 @@
+package com.example.miniprojectquiz
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+
+class EndScreen : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_end_screen)
+    }
+}

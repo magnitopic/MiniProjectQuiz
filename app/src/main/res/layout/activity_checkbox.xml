@@ -54,28 +54,32 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="GIMP" />
+                android:text="GIMP"
+                android:textSize="18dp" />
 
             <CheckBox
                 android:id="@+id/question1Awnser2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="Wine" />
+                android:text="Wine"
+                android:textSize="18dp" />
 
             <CheckBox
                 android:id="@+id/question1Awnser3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="GParted" />
+                android:text="GParted"
+                android:textSize="18dp" />
 
             <CheckBox
                 android:id="@+id/question1Awnser4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="iTerm" />
+                android:text="iTerm"
+                android:textSize="18dp" />
 
         </LinearLayout>
 
@@ -121,25 +125,29 @@
                     android:id="@+id/question2Awnser1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Opera" />
+                    android:text="Opera"
+                    android:textSize="18dp" />
 
                 <RadioButton
                     android:id="@+id/question2Awnser2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Safari" />
+                    android:text="Safari"
+                    android:textSize="18dp" />
 
                 <RadioButton
                     android:id="@+id/question2Awnser3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Chrome" />
+                    android:text="Chrome"
+                    android:textSize="18dp" />
 
                 <RadioButton
                     android:id="@+id/question2Awnser4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Firefox" />
+                    android:text="Firefox"
+                    android:textSize="18dp" />
             </RadioGroup>
 
         </LinearLayout>
@@ -186,25 +194,29 @@
                     android:id="@+id/question3Awnser1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Windows Me" />
+                    android:text="Windows Me"
+                    android:textSize="18dp" />
 
                 <RadioButton
                     android:id="@+id/question3Awnser2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Windows 8" />
+                    android:text="Windows 8"
+                    android:textSize="18dp" />
 
                 <RadioButton
                     android:id="@+id/question3Awnser3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Windows 95" />
+                    android:text="Windows 95"
+                    android:textSize="18dp" />
 
                 <RadioButton
                     android:id="@+id/question3Awnser4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Windows 9" />
+                    android:text="Windows 9"
+                    android:textSize="18dp" />
             </RadioGroup>
 
         </LinearLayout>
@@ -251,25 +263,29 @@
                     android:id="@+id/question4Awnser1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Linux" />
+                    android:text="Linux"
+                    android:textSize="18dp" />
 
                 <RadioButton
                     android:id="@+id/question4Awnser2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Tux" />
+                    android:text="Tux"
+                    android:textSize="18dp" />
 
                 <RadioButton
                     android:id="@+id/question4Awnser3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Flipy" />
+                    android:text="Flipy"
+                    android:textSize="18dp" />
 
                 <RadioButton
                     android:id="@+id/question4Awnser4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Gnu" />
+                    android:text="Gnu"
+                    android:textSize="18dp" />
             </RadioGroup>
 
         </LinearLayout>
@@ -355,28 +371,32 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="Java" />
+                android:text="Java"
+                android:textSize="18dp" />
 
             <CheckBox
                 android:id="@+id/question6Awnser2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="Swift" />
+                android:text="Swift"
+                android:textSize="18dp" />
 
             <CheckBox
                 android:id="@+id/question6Awnser3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="Cobol" />
+                android:text="Cobol"
+                android:textSize="18dp" />
 
             <CheckBox
                 android:id="@+id/question6Awnser4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="C++" />
+                android:text="C++"
+                android:textSize="18dp" />
 
         </LinearLayout>
 

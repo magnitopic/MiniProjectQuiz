@@ -27,12 +27,17 @@ class checkbox : AppCompatActivity() {
         )
     }
 
-    fun sendMessage(vista: View){
-        Toast.makeText(applicationContext, comentarios.get((Math.random()*comentarios.length).toInt()).toString(), Toast.LENGTH_SHORT).show()
+    fun sendMessage(vista: View) {
+        Toast.makeText(
+            applicationContext,
+            comentarios.get((Math.random() * comentarios.length).toInt()).toString(),
+            Toast.LENGTH_SHORT
+        ).show()
     }
 
     fun getResults(vista: View) {
-        val i = Intent(this, checkbox::class.java)
+        val i = Intent(this, EndScreen::class.java)
         startActivity(i)
     }
+
 }

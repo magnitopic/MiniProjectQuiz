@@ -20,7 +20,7 @@
             android:id="@+id/introTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hola humano soy Marvin, el andoride paranoide."
+            android:text="¡Hola humano! Soy Marvin, el androide paranoide."
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="25sp"
@@ -42,7 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/mainIntro"
-            android:text="Aceptas el reto?"
+            android:text="¿Aceptas el reto?"
 
             android:textAlignment="center"
             android:textColor="@color/black"

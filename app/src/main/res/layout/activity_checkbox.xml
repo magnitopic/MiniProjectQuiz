@@ -35,7 +35,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:onClick="sendMessage"
                     app:srcCompat="@drawable/marvin_extra_small" />
 
                 <TextView
@@ -54,32 +53,36 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
+                android:onClick="sendMessage"
                 android:text="GIMP"
-                android:textSize="18dp" />
+                android:textSize="18sp" />
 
             <CheckBox
                 android:id="@+id/question1Awnser2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
+                android:onClick="sendMessage"
                 android:text="Wine"
-                android:textSize="18dp" />
+                android:textSize="18sp" />
 
             <CheckBox
                 android:id="@+id/question1Awnser3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
+                android:onClick="sendMessage"
                 android:text="GParted"
-                android:textSize="18dp" />
+                android:textSize="18sp" />
 
             <CheckBox
                 android:id="@+id/question1Awnser4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
+                android:onClick="sendMessage"
                 android:text="iTerm"
-                android:textSize="18dp" />
+                android:textSize="18sp" />
 
         </LinearLayout>
 
@@ -125,29 +128,33 @@
                     android:id="@+id/question2Awnser1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="sendMessage"
                     android:text="Opera"
-                    android:textSize="18dp" />
+                    android:textSize="18sp" />
 
                 <RadioButton
                     android:id="@+id/question2Awnser2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="sendMessage"
                     android:text="Safari"
-                    android:textSize="18dp" />
+                    android:textSize="18sp" />
 
                 <RadioButton
                     android:id="@+id/question2Awnser3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="sendMessage"
                     android:text="Chrome"
-                    android:textSize="18dp" />
+                    android:textSize="18sp" />
 
                 <RadioButton
                     android:id="@+id/question2Awnser4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="sendMessage"
                     android:text="Firefox"
-                    android:textSize="18dp" />
+                    android:textSize="18sp" />
             </RadioGroup>
 
         </LinearLayout>
@@ -194,29 +201,33 @@
                     android:id="@+id/question3Awnser1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="sendMessage"
                     android:text="Windows Me"
-                    android:textSize="18dp" />
+                    android:textSize="18sp" />
 
                 <RadioButton
                     android:id="@+id/question3Awnser2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="sendMessage"
                     android:text="Windows 8"
-                    android:textSize="18dp" />
+                    android:textSize="18sp" />
 
                 <RadioButton
                     android:id="@+id/question3Awnser3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="sendMessage"
                     android:text="Windows 95"
-                    android:textSize="18dp" />
+                    android:textSize="18sp" />
 
                 <RadioButton
                     android:id="@+id/question3Awnser4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="sendMessage"
                     android:text="Windows 9"
-                    android:textSize="18dp" />
+                    android:textSize="18sp" />
             </RadioGroup>
 
         </LinearLayout>
@@ -263,29 +274,33 @@
                     android:id="@+id/question4Awnser1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="sendMessage"
                     android:text="Linux"
-                    android:textSize="18dp" />
+                    android:textSize="18sp" />
 
                 <RadioButton
                     android:id="@+id/question4Awnser2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="sendMessage"
                     android:text="Tux"
-                    android:textSize="18dp" />
+                    android:textSize="18sp" />
 
                 <RadioButton
                     android:id="@+id/question4Awnser3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="sendMessage"
                     android:text="Flipy"
-                    android:textSize="18dp" />
+                    android:textSize="18sp" />
 
                 <RadioButton
                     android:id="@+id/question4Awnser4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="sendMessage"
                     android:text="Gnu"
-                    android:textSize="18dp" />
+                    android:textSize="18sp" />
             </RadioGroup>
 
         </LinearLayout>
@@ -330,6 +345,7 @@
                 android:hint="Tu respuesta"
                 android:inputType="number"
                 android:maxLength="4"
+                android:onClick="sendMessage"
                 android:textSize="20sp" />
 
         </LinearLayout>
@@ -371,32 +387,36 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
+                android:onClick="sendMessage"
                 android:text="Java"
-                android:textSize="18dp" />
+                android:textSize="18sp" />
 
             <CheckBox
                 android:id="@+id/question6Awnser2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
+                android:onClick="sendMessage"
                 android:text="Swift"
-                android:textSize="18dp" />
+                android:textSize="18sp" />
 
             <CheckBox
                 android:id="@+id/question6Awnser3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
+                android:onClick="sendMessage"
                 android:text="Cobol"
-                android:textSize="18dp" />
+                android:textSize="18sp" />
 
             <CheckBox
                 android:id="@+id/question6Awnser4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
+                android:onClick="sendMessage"
                 android:text="C++"
-                android:textSize="18dp" />
+                android:textSize="18sp" />
 
         </LinearLayout>
 

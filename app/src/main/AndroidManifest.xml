@@ -15,12 +15,8 @@
         tools:targetApi="31">
         <activity
             android:name=".EndScreen"
-            android:exported="false" />
-        <activity
-            android:name=".finalScreen"
             android:exported="false"
-            android:label="@string/title_activity_final_screen"
-            android:theme="@style/Theme.MiniProjectQuiz.NoActionBar" />
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".checkbox"
             android:exported="false"

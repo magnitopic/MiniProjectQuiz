@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.*
+import java.util.*
 
 class checkbox : AppCompatActivity() {
     private lateinit var firstQuestionElements: Array<CheckBox>
@@ -65,6 +66,7 @@ class checkbox : AppCompatActivity() {
         // de lo contrario calculamos score y cambiamos de activity
         if (validateFileds()) {
             //TODO: pass score to final screen
+            Log.d("Cozas", getScore().toString())
             val i = Intent(this, EndScreen::class.java)
             startActivity(i)
         } else {
@@ -96,7 +98,7 @@ class checkbox : AppCompatActivity() {
             !fifthQuestionElements.text.isNullOrBlank(),
             count2 != 4
         )
-        for (i in values){
+        for (i in values) {
             if (!i)
                 return false
         }
@@ -104,4 +106,36 @@ class checkbox : AppCompatActivity() {
     }
 
 
+    fun getScore(): Int {
+        var score = 0
+
+        // Primer pergunta
+        if (!firstQuestionElements[0].isChecked &&
+            firstQuestionElements[1].isChecked &&
+            firstQuestionElements[2].isChecked &&
+            !firstQuestionElements[3].isChecked
+        )
+            score++
+        // Segunda pregunta
+        if (secondQuestionElements.getCheckedRadioButtonId() == R.id.question2Awnser2)
+            score++
+        // Tercera pergunta
+        if (thirdQuestionElements.getCheckedRadioButtonId() == R.id.question3Awnser4)
+            score++
+        // Curta pergunta
+        if (fourthQuestionElements.getCheckedRadioButtonId() == R.id.question4Awnser2)
+            score++
+        // Quita pergunta
+        if (fifthQuestionElements.getText().toString().equals("1990"))
+            score++
+        // Sexta pergunta
+        if (sixthQuestionElements[0].isChecked &&
+            !sixthQuestionElements[1].isChecked &&
+            !sixthQuestionElements[2].isChecked &&
+            sixthQuestionElements[3].isChecked
+        )
+            score++
+
+        return (score * 100 / 6).toInt()
+    }
 }

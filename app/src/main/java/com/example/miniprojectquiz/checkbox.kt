@@ -3,6 +3,7 @@ package com.example.miniprojectquiz
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.*
 
@@ -49,7 +50,7 @@ class checkbox : AppCompatActivity() {
             "Bien hecho humano",
             "Aún sigo siendo el androide más inteligente de la galaxia",
             "Yo te ayudaría si te hiciera falta",
-            "Se ve que no eres el ser más rapido de la galaxia"
+            "Esa no era fácil"
         )
         Toast.makeText(
             applicationContext,
@@ -76,8 +77,31 @@ class checkbox : AppCompatActivity() {
     }
 
     fun validateFileds(): Boolean {
+        var count1 = 0
+        var count2 = 0
+        for (i in firstQuestionElements) {
+            if (!i.isChecked)
+                count1 += 1
+        }
+        for (i in sixthQuestionElements) {
+            if (!i.isChecked)
+                count2 += 1
+        }
 
-
+        var values = arrayOf(
+            count1 != 4,
+            secondQuestionElements.getCheckedRadioButtonId() != -1,
+            thirdQuestionElements.getCheckedRadioButtonId() != -1,
+            fourthQuestionElements.getCheckedRadioButtonId() != -1,
+            !fifthQuestionElements.text.isNullOrBlank(),
+            count2 != 4
+        )
+        for (i in values){
+            if (!i)
+                return false
+        }
         return true
     }
+
+
 }

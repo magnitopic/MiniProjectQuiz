@@ -3,10 +3,8 @@ package com.example.miniprojectquiz
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.*
-import java.util.*
 
 class checkbox : AppCompatActivity() {
     private lateinit var firstQuestionElements: Array<CheckBox>
@@ -65,9 +63,9 @@ class checkbox : AppCompatActivity() {
         // Si no se ha contestado a todas las preguntas informamos con un Toast
         // de lo contrario calculamos score y cambiamos de activity
         if (validateFileds()) {
-            //TODO: pass score to final screen
-            Log.d("Cozas", getScore().toString())
-            val i = Intent(this, EndScreen::class.java)
+            val i = Intent(this, EndScreen::class.java).apply {
+                putExtra("score", getScore().toString())
+            }
             startActivity(i)
         } else {
             Toast.makeText(
@@ -136,6 +134,6 @@ class checkbox : AppCompatActivity() {
         )
             score++
 
-        return (score * 100 / 6).toInt()
+        return score * 100 / 6
     }
 }

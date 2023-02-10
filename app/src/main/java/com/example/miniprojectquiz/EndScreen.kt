@@ -6,6 +6,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import java.io.UnsupportedEncodingException
@@ -13,15 +14,18 @@ import java.net.URLEncoder
 
 
 class EndScreen : AppCompatActivity() {
+    private lateinit var scoreTextView: TextView
+    private lateinit var score: String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_end_screen)
+        val name = intent.getStringExtra("score")
+        scoreTextView = findViewById(R.id.scoreTextView)
+        scoreTextView.text = name + "/100"
     }
 
-
     fun shareButton(vista: View) {
-        //${score}
-        shareTwitter("He realizado el quiz de Marvin con una puntación de:\n\nCrés que puedes hacerlo mejor? Descargaté la app hoy!!")
+        shareTwitter("He realizado el quiz de Marvin con una puntación de:\n${score}\nCrés que puedes hacerlo mejor? Descargaté la app hoy!!")
     }
 
 

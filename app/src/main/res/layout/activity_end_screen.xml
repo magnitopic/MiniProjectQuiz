@@ -15,14 +15,15 @@
         android:layout_height="0dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
-        android:paddingTop="20dp"
-
         android:layout_marginEnd="10dp"
+
         android:layout_weight=".33"
         android:background="@color/backgroudBrown"
+        android:paddingTop="20dp"
         app:srcCompat="@drawable/marvin_fly_small" />
 
     <RelativeLayout
+        android:id="@+id/endCreditsContainer"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="10dp"
@@ -54,6 +55,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/shareButtonContainer"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="10dp"
@@ -62,7 +64,7 @@
         android:background="@color/backgroudBrown">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/shareButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
